@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Identity;
 
 namespace Identity.Data
 {
@@ -9,5 +10,6 @@ namespace Identity.Data
             : base(options)
         {
         }
+        public DbSet<Identity.Invoice> Invoice { get; set; }
     }
 }
